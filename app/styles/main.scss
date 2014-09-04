@@ -1,7 +1,10 @@
-$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 
 // bower:scss
-@import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
+
+@import url(http://fonts.googleapis.com/css?family=Rokkitt);
+@import url(http://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff);
+@import url(http://fonts.googleapis.com/css?family=Lato:100);
+
 // endbower
 
 body {
@@ -17,7 +20,6 @@ body {
 .intro-header {
     h1 {
         font-family: 'Herr Von Muellerhoff', cursive;
-        font-style: italic;
         text-align: center;
         margin-top: 2em;
         font-size: 4em;
@@ -86,6 +88,25 @@ body {
 
         h2 {
             font-size: 1em;
+        }
+    }
+}
+
+@media only screen 
+and (max-width : 380px)  {
+    body {
+        text-align: center;
+    }
+
+    .intro-header {
+        h1 {
+            font-size: 2.5em;
+        }
+    }
+
+    .company-header {
+        h2 {
+            font-size: 3.5em;
         }
     }
 }
